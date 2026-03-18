@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-visible{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1500ms;
+}
+.img-hidden{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1500ms;
+}
+.img-visible2{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1500ms;
+}
+.img-hidden2{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 100%;
+    transition: all 1500ms;
+}
+.img-hidden2-1{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1500ms;
+}
+.img-visible3{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 0;
+    transition: all 1500ms;
+}
+.img-hidden3{
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: 100vw;
+    transition: all 1500ms;
+}
+.left-arrow{
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    cursor: pointer;
+}
+.right-arrow{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    cursor: pointer;
+}
+.img-1:hover {
+    position: fixed;
+    width: 80%;
+    margin-left: 10%;
+    left: -100%;
+}

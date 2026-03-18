@@ -1,0 +1,46 @@
+.ord{
+    display: flex;
+}
+h1, h2, h3, h4, h5{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.c1{
+    background-color: brown;
+    border: 5px solid white; 
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+.c2{
+    background-color: rgb(25, 210, 114);
+    border: 5px dotted white; 
+    margin: 10px;
+    height: 400px;
+    width: 300px; 
+}
+.c3{
+    background-color: rgb(34, 121, 208);
+    border: 5px dashed white; 
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+.c4{
+    background-color: rgb(113, 36, 213);
+    border: 5px double white; 
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+.c5{
+    background-color: rgb(113, 36, 213);
+    border: 5px groove white; 
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+body{
+    background-color: black;
+}

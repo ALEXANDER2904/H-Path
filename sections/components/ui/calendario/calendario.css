@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px; /* Aquí se establece el margen superior */
+    font-size: 30px;
+}
+
+
+.box-6{ /* esta  es sisisisi la que sirve para el calendario */
+    display: grid;
+    width:1500px;   
+    height: 500px;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    grid-gap: 15px; /*  espaciado de los elementos*/
+    border:3px solid black;
+    cursor: pointer;
+    margin: 50px auto;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas*/
+}
+/* va pegada con esta la box-6 */
+
+.style-box{
+    background-color:dodgerblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgb(61, 61, 242);
+
+
+}
+
+.mini-box{
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+   
+}
+
+.mini-box2{
+    background-color: rgb(45, 211, 189);
+    grid-row-start: 2;
+    grid-row-end: 6;
+   
+}
+
+.mini-box3{
+    grid-column-start:4;
+   
+   
+}

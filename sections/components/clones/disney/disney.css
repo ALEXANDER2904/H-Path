@@ -1,0 +1,16 @@
+body{
+    background-image:url(https://images.unsplash.com/photo-1528041119984-da3a9f8d04d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzbmV5JTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80)
+}
+.box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.fuente{
+    font-family: 'WaltographRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+}

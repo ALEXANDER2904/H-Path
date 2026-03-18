@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* VISTA NORMAL */
+body {
+    display: flex; 
+    height: 100vh;
+  }
+.principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen1, .imagen2, .imagen3{
+    height: 600px;
+    width: 600px;
+}
+.leftarrow, .rightarrow{
+    height: 150px;
+    width: 150px;
+}
+.leftarrow{
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    cursor: pointer;
+}
+.rightarrow{
+    position: absolute;
+    top: 50%; 
+    right: 0;
+    cursor: pointer;
+}
+/* PARA OCULTAR Y MOVER */
+.imagen1{
+    position: fixed;
+    transition: all 1500ms;
+}
+.imagen1h{
+    position: fixed;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1500ms;
+}
+.imagen2{
+    position: fixed;
+    transition: all 1500ms;
+}
+.imagen2h{
+    position: fixed;
+    margin-left: 10%;
+    left: 100%;
+    transition: all 1500ms;
+}
+/* .imagen2hh{
+    position: fixed;
+    margin-left: 10%;
+    left: -100%;
+    transition: all 1500ms;
+} */
+.imagen3{
+    position: fixed;
+    transition: all 1500ms;
+}
+.imagen3h{
+    position: fixed;
+    margin-left: 10%;
+    left: 100vw;
+    transition: all 1500ms;
+}

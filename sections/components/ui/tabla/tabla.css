@@ -1,0 +1,30 @@
+.img1, .img2, .img3{
+    height: 100px;
+    width: 100px;
+}
+
+.c1{
+    height: 16px;
+    width: 14px;   
+}
+
+.c2{
+    height: 16px;
+    width: 14px; 
+}
+
+table{
+border-collapse: collapse; 
+border-top: none;  
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+}
+
+.c1{
+    border-top: none;
+}

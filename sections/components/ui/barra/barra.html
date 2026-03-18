@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="barra.css">
+  <title>Barra de Progreso</title>
+</head>
+<body>
+  <div class="barra">
+    <div id="relleno-barra" class="relleno"></div>
+  </div>
+  <label for="porcentaje">Porcentaje:</label>
+  <input type="number" id="porcentaje" min="0" max="5" step="1" />
+  <button onclick="llenarBarra()">Llenar Barra</button>
+
+  <script src="barra.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 400px;
+}
+.a1{
+    padding: 3px;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    /* width: 105px; */
+}
+
+/* input{type=*text*}:focus {
+    outline: none;
+} */
+
+legend{
+    background-color: rgb(0, 60, 255);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+textarea{
+    margin: 5px;
+}
+
+.btn-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

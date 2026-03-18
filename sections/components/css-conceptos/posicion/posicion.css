@@ -1,0 +1,28 @@
+.mainbox{
+    width: 100%;
+    height: 3000;
+}
+.box1, .box2, .box3, .box4{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+.box1{
+    position: static ;
+    background-color: brown;
+}
+.box2{
+    margin: 50px 0px 0px 500px;
+    position: absolute;
+    background-color: rgb(220, 242, 20);
+}
+.box3{  
+    margin-left: 1120px;
+    position: fixed;
+    background-color: blue;
+}
+.box4{
+    position: relative;
+    background-color: aquamarine;
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 10px 10px;
+}
+h2{
+    margin: 10px 10px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box3{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 400px;
+    overflow: auto;
+    background-color: darkcyan;
+}
+.box5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1490px;
+    height: 400px;
+    overflow: auto;
+    background-color: darkcyan;
+}
+.box6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box7{
+    /* entre menos cuadros haya mas se va a notar el espaciado que hay entre los cuadros */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box9{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box10{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box11{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: darkcyan;
+}
+.box12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 950px;
+    background-color: darkcyan;
+}
+.box13{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 450px;
+    background-color: darkcyan;
+}
+.box14{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 450px;
+    background-color: darkcyan;
+}
+.box15{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-color: darkcyan;
+}
+.boxflexdir{
+    color: aliceblue;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(47, 9, 9);
+    margin: 10px;
+}
+
+
+
+/* 
+
+flex :end
+flex direction row
+
+*/

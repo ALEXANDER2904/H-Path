@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    height: 50px;
+}
+.header{
+    margin-left: 150px;
+    margin-right: 800px;   
+    margin-bottom: 50px;
+    border-radius: 30px;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 900px;
+}
+.main-img-box{
+    margin-left: 150px;
+    margin-right: 150px;   
+    border-radius: 50px;
+    width: 1050px;
+    height: 500px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 900px;
+}
+.article-box{
+    display: grid;
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    gap: 50px;
+    grid-template: "empty-izq article1 article2 article3 empty-der" 550px  /  
+    1fr       300px     300px    300px   1fr;
+}
+.article1{
+    border-radius: 50px;
+    grid-area: article1;
+    
+}
+.article2{
+    border-radius: 50px;
+    grid-area: article2;
+    
+}
+.article3{
+    border-radius: 50px;
+    grid-area: article3;
+    
+}
+.img-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-radius: 30px;
+    background-color: rgb(55, 37, 37);
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+} 
+.text-content{
+    text-align: center;
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding-bottom: 50px;
+}
+@media only screen and (max-width: 920px) {
+    .article-box{
+        gap: 10px;
+        grid-template:"empty-izq article1  article2  empty-der" 520px
+                      /1fr        420px     420px  1fr  420px 1fr;
+                      /* grid-template: "empty-izq article1 article2 article3 empty-der" 550px  /  
+                      1fr       300px     300px    300px   1fr; */
+    }    
+    .header{
+        width: 200px;
+        height: 100px;
+    }
+    .main-img-box{
+        width: 600px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .article-box{
+        gap: 10px;
+        grid-template:"empty-izq article1 empty-der" 520px
+                      "empty-izq article2 empty-der" 520px
+                      "empty-izq article3 empty-der" 520px
+                      /1fr        420px     420px    420px 1fr;
+        margin-left: 30px;
+    }    
+    .header{
+        margin-left: 30px;
+        width: 500px;
+        height: 100px;
+    }
+    .main-img-box{
+        margin-left: 30px;
+        width: 500px;
+        height: 500px;
+    }
+}

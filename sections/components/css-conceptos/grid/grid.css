@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 2.2em;
+    /* margin-bottom: 60px;
+    margin-top: 30px; */
+    margin: 60px 60px;
+}
+h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.box{
+    display: grid;
+    width: 340px;
+    height: 600px;
+    color: white;
+    font-size: 1.3em;
+    grid-gap: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+.box-2{
+    grid-template-columns: 100px 100px 100px;
+}
+.box-3{
+    width: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.box-4{
+    width: 722px;
+    grid-template-columns: 1fr repeat(4, 150px ) 1fr;
+    grid-template-rows: repeat(2, 150px);
+    /* el grid template rows hace que los cuadros no ocupen todo el espacio, porque son filas entoces las alinea en el espacio y no CON el espacio*/
+}
+.box-5{
+    width: 345px;
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+}
+.style-box{
+    background-color: rgb(130, 161, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/*MENU IZQUIERDA*/
+.main-content{
+    display: grid;
+    grid-template:  "main-menu box-menu-vertical" 70px 
+                     "main-menu main-boxes"/220px   
+                     1fr;
+}
+.box-menu-vertical{
+    grid-area: box-menu-vertical;
+    width: 100%;
+}
+.menu-vertical{
+    width: 100%;
+    font-size: 1.2em;
+}
+.main-menu{
+    grid-area: main-menu;
+    position: fixed;
+    display: grid;
+    height: 100%;
+    width: 250px;
+    background-color: black;
+    grid-template:  "photos" 250px
+                    "main-items" 1fr
+                    "social-media" 50px /
+                    100%;
+}
+.photos{
+    grid-area: photos;
+    border-bottom: 1px solid white;
+}
+.main-items{
+    grid-area: main-items;
+    border-bottom: 1px solid white;
+}
+.social-media{
+    grid-area: social-media;
+    border-bottom: 1px solid white;
+}
+/*COLUMNAS*/
+.main-boxes{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: main-boxes;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-gap: 20px;
+    grid-template: "empty-left column1 column2 column3 empty-right" /
+                        1fr     300px   300px   300px       1fr;               ;
+}
+/*COLUMNA1*/
+.column1{
+    display: grid;
+    grid-area: column1;
+    width: 100%;
+    row-gap: 30px;
+    grid-template:  "img1" 300px 
+                    "img2" 500px /
+                     1fr;
+}
+.img1{
+    grid-area: img1;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+.img2{
+    grid-area: img2;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+/*COLUMNA2*/
+.column2{
+    display: grid;
+    grid-area: column2;
+    width: 100%;
+    row-gap: 30px;
+    grid-template:  "img3" 500px 
+                    "img4" 450px /
+                     1fr;
+}
+.img3{
+    grid-area: img3;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+.img4{
+    grid-area: img4;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+/*COLUMNA3*/
+.column3{
+    display: grid;
+    grid-area: column3;
+    width: 100%;
+    row-gap: 30px;
+    grid-template:  "img5" 200px 
+                    "img6" 250px 
+                    "img7" 400px/
+                     1fr;
+}
+.img5{
+    grid-area: img5;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+.img6{
+    grid-area: img6;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}
+.img7{
+    grid-area: img7;
+    background-color: goldenrod;
+    width: 100%;
+    border-radius: 10px;
+}

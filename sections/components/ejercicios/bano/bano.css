@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.slider {
+    grid-area: slider;
+    justify-content: center;
+    background-color: #F7F7F7;
+    width: 3120px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+    transition: all 2s;
+}
+.slider-view-1 {
+    left: 0;
+}
+.slider-view-2 {
+    left: -1040px;
+}
+.slider-view-3 {
+    left: -2080px;
+}
+.main-box-slider {
+    width: 100%;
+    display: grid;
+    /* background-color: blue; */
+    grid-template: "empty-left box-slider empty-right" /
+                    1fr        1300px     1fr;
+                    position: relative;
+    z-index: 20;
+}
+.empty-left, .empty-right {
+    background-color: white;
+    z-index: 30;
+}
+.box-slider {
+    grid-area: box-slider;
+    width: 100%;
+    height: 900px;
+    display: grid;
+    grid-template: "arrow-left slider arrow-right" /
+                    130px      1040px 130px;
+    z-index: 20;
+    overflow: hidden;
+}
+.arrow-left {
+    grid-area: arrow-left;
+}
+.arrow-right {
+    grid-area: arrow-right;
+}
+.arrow-left, .arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(190, 58, 58); */
+}
+.slider-1, .slider-2, .slider-3 {
+    width: 1040px;
+    display: flex;
+    justify-content: flex-end;
+}
+.fa-arrow-right, .fa-arrow-left {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+.cont-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.list-cont, .list-cont2{
+    display: flex;
+    gap: 30px;
+    margin: 0 40px;
+    list-style: none;
+}
+.loremuno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+.cont-list2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: grey;
+}
+.cont-1-l{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.cont-2-l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    gap: 30px;
+    list-style: none;
+    height: 50px;
+    width: 280px;
+    box-shadow: 0 0 10px 0 black;
+}
+.logo-ban{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+.btm{
+    height: 40px;
+    width: 70px;
+    background-color: yellow;
+    border: none;
+    border-radius: 25px;
+}
+.cont-slide{
+    height: 550px;
+    width: 100%;
+    background-color: aqua;
+}
+.centrar-cubos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.cont-logitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    box-shadow: 0 0 10px -5px;
+}
+.cuadros-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+}
+.cuadros-icons i{
+    font-size: 35px;
+}
+.cuadro-color{
+    background-color: rgb(255, 186, 186);
+}
+.title-1{
+    font-size: 1.8em;
+    margin: 50px 0 30px -850px;
+}
+.contenedor-padre-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.cuadro-images{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 450px;
+}
+.cuadro-1{
+    width: 560px;
+    height: 450px;
+    background-color: rgb(253, 144, 226);
+    margin: 0 10px;
+}
+.cuadro-2{
+    width: 280px;
+    height: 450px;
+    background-color: rgb(33, 174, 145);
+    margin: 0 10px;
+}
+.cuadro-3{
+    width: 280px;
+    height: 450px;
+    background-color: rgb(214, 131, 35);
+    margin: 0 10px;
+}
+.imagen1{
+    width: 560px;
+    height: 180px;
+    background-color: chartreuse;
+}
+.imagen2{
+    width: 280px;
+    height: 180px;
+    background-color: rgb(144, 255, 199);
+}
+.imagen3{
+    width: 280px;
+    height: 180px;
+    background-color: rgb(144, 255, 199);
+}
+.contenido-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+    margin: 20px;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-size1{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.text-size2{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.boton{
+    border: 1px solid black;
+    height: 35px;
+    width: auto;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-size: 1.1em;
+}
+.contenedor-centrar{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(199, 17, 199);
+}
+.contenedor-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+}
+.primer-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 300px;
+    background-color: blueviolet;
+}
+.segundo-cont{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+.tercer-cont{
+    width: 500px;
+    height: 300px;
+    background-color: springgreen;
+}
+.title-2{
+    font-size: 1.7em;
+    margin: 0 0 0 320px;
+    padding-top: 30px;
+}
+.titles{
+    margin: 20px;
+}
+.boton2{
+    border: 1px solid black;
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 1.1em;
+    margin: 20px;
+}
+.box-barra-signal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.barra-signal{
+    width: 100px;
+    height: 10px;
+    background-color: aquamarine;
+    margin-left: 20px;
+    position: relative;
+    top: -60px;
+}
+.text-icon{
+    text-align: end;
+}

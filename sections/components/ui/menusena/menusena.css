@@ -1,0 +1,6 @@
+.h{
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
