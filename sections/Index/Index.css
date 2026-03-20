@@ -2,39 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manufacturing Consent", sans-serif;
 }
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
+  padding: 24px;
   color: #f5f5f5;
   background: linear-gradient(120deg, #111 0%, #1f1f1f 45%, #2a2a2a 100%);
 }
 
-.indice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 34px 24px;
-  width: 100%;
-  height: 100vh;
+.indice-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
 }
-
+.barra{
+  width: 20px;
+  height: 5px;
+  background-color: #6d0015;
+}
 .indice-header h1 {
-  font-size: clamp(1.4rem, 2vw, 2.1rem);
-  letter-spacing: 1px;
-}
-
-.indice-header p {
-  margin-top: 8px;
-  color: #d8d8d8;
-  max-width: 900px;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .indice-track {
-  width: 100%;
-  display: flex;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   gap: 12px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -74,5 +71,10 @@ body {
   background: #f7ff72;
   border-color: #f7ff72;
   color: #111;
-  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Manufacturing Consent";
+  src: url("../../fonts/ManufacturingConsent-Regular.ttf") format("truetype");
+  font-weight: 100;
 }

@@ -6,9 +6,38 @@
 
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background:
+    linear-gradient(135deg, rgba(255, 195, 195, 0) 40%, rgba(255, 195, 195, 0.16) 50%, rgba(255, 195, 195, 0) 60%),
+    linear-gradient(135deg, #6d0015 0%, #8f001f 35%, #b3122f 62%, #7a001b 100%);
   width: 100%;
   height: 100vh;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 100;
+  font-family: "Manufacturing Consent";
+}
+.hero p{
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Manufacturing Consent";
+  src: url("../../fonts/ManufacturingConsent-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../../fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
 }

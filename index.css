@@ -4,17 +4,45 @@
   box-sizing: border-box;
 }
 
+/* ===== INICIO: Esto es de la animacion ===== */
 body {
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  background: radial-gradient(circle at 20% 10%, #1f1f1f 0%, #0d0d0d 55%, #050505 100%);
 }
 
 .i-frame {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  --stack-progress: 0;
   width: 100%;
   height: 100vh;
   border: none;
-  display: block; 
+  display: block;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  overflow: hidden;
+  z-index: 1;
+  transform-origin: center top;
+  transform: translateY(calc(var(--stack-progress) * -12px)) scale(calc(1 - (var(--stack-progress) * 0.02)));
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, calc(0.12 + (var(--stack-progress) * 0.12))),
+    0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 110ms linear, box-shadow 140ms linear;
 }
+
+@media (max-width: 900px) {
+  .i-frame {
+    width: 100vw;
+    border-radius: 0;
+    transform: translateY(calc(var(--stack-progress) * -8px)) scale(calc(1 - (var(--stack-progress) * 0.015)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .i-frame {
+    transform: none;
+    transition: none;
+  }
+}
+/* ===== FIN: Esto es de la animacion ===== */
