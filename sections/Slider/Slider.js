@@ -19,7 +19,7 @@ components.forEach((comp, i) => {
 
     const dot = document.createElement('button');
     dot.title = comp.label;
-    if (i === 0) dot.classList.add('active');
+    if (i === 0) dot.classList.add('active');6
     dot.addEventListener('click', () => goTo(i));
     dots.appendChild(dot);
 });
